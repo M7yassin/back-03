@@ -18,7 +18,8 @@ hbs.registerPartials(partialsPath)
 app.get('/',(req,res)=>{
     res.render('index',{
         title: "HOME",
-        desc:"This is Home Page"
+        desc:"This is Home Page",
+        contactLink:"#"
     }
     )
 })
@@ -28,7 +29,8 @@ app.get('/service',(req,res)=>{
         name:"Mohammed",
         city:"Tartous",
         age:"24",
-        img1: "images/trainer.jpg"
+        img1: "images/trainer.jpg",
+        contactLink:"#"
     }
     )
 })
@@ -38,7 +40,8 @@ app.get ('/team' , (req,res) => {
         name: "Shaza",
         city:"Damascus",
         age: 25,
-        img2: "images/trainer2.jpg"
+        img2: "images/trainer2.jpg",
+        contactLink:"#"
     })
 })
 app.listen(port,()=>{
